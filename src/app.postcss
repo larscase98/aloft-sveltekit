@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cloud-shadow: #a0dde5;
+}
+
+body > div#svelte {
+  @apply min-h-screen flex flex-col;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+  @apply text-3xl font-light;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+a {
+  @apply transition-all text-blue-700 hover:text-blue-500;
+}
+
+main {
+  @apply flex-grow flex flex-col justify-start items-start bg-blue-50;
+
+  section {
+    @apply w-full flex flex-col justify-start items-center py-8;
+
+    .content {
+      @apply w-3/4 lg:w-2/3 flex flex-col justify-start items-start;
+    }
+
+    .inner {
+      @apply w-full flex flex-col justify-start items-start p-6 px-8 space-y-4 leading-relaxed;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cloud1">
+<rect width="100" height="60" fill="white"/>
+<g id="shadow">
+<circle id="shadow1" cx="23" cy="37" r="21" fill="#A0DDE6"/>
+<circle id="shadow2" cx="45" cy="36" r="21" fill="#A0DDE6"/>
+<circle id="shadow3" cx="75" cy="36" r="21" fill="#A0DDE6"/>
+<circle id="shadow4" cx="44" cy="22" r="21" fill="#A0DDE6"/>
+</g>
+<g id="outline">
+<circle id="outline1" cx="22" cy="36" r="20" fill="#ECF8F8"/>
+<circle id="outline2" cx="44" cy="35" r="20" fill="#ECF8F8"/>
+<circle id="outline3" cx="74" cy="35" r="20" fill="#ECF8F8"/>
+<circle id="outline4" cx="43" cy="21" r="20" fill="#ECF8F8"/>
+</g>
+<g id="white">
+<circle id="white1" cx="22" cy="36" r="18" fill="white"/>
+<path id="white2" d="M62 35C62 44.9411 53.9411 53 44 53C34.0589 53 26 44.9411 26 35C26 25.0589 34.0589 17 44 17C53.9411 17 62 25.0589 62 35Z" fill="white"/>
+<circle id="white3" cx="74" cy="35" r="18" fill="white"/>
+<circle id="white4" cx="43" cy="21" r="18" fill="white"/>
+</g>
+</g>
+</svg>
