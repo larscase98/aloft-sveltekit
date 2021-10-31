@@ -1,3 +1,6 @@
+<script context="module">
+</script>
+
 <svelte:head>
   <title>about us | aloft</title>
 </svelte:head>

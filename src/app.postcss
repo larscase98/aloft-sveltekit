@@ -6,6 +6,15 @@
   --cloud-shadow: #a0dde5;
 }
 
+input,
+input:focus,
+textarea,
+textarea:focus,
+button,
+button:focus {
+  outline: none;
+}
+
 body > div#svelte {
   @apply min-h-screen flex flex-col;
 }
@@ -41,7 +50,7 @@ main {
     @apply w-full flex flex-col justify-start items-center py-8;
 
     .content {
-      @apply w-3/4 lg:w-2/3 flex flex-col justify-start items-start;
+      @apply w-3/4 lg:w-2/3 xl:w-3/5 flex flex-col justify-start items-start;
     }
 
     .inner {

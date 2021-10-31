@@ -1,6 +1,8 @@
-<script>
+<script context="module">
   // distance scrolled from top, edit header padding like this
   let y;
+
+  export const prerender = true;
 </script>
 
 <svelte:head>
@@ -25,11 +27,11 @@
       </p>
       <p>
         The sad truth about the state of web development is that it's chock full of bloated,
-        unnecessary crap, worsening your and your users' experience.
+        unnecessary crap, slowing down and cluttering things up for you and your visitors.
       </p>
       <p>
-        This is can take any form you envision, and we can't wait to find out what that looks like.
-        For more information, check out the <a href="services">services page</a>.
+        Your custom website can take any form you envision, and we can't wait to find out what that
+        looks like. For more information, check out <a href="/services">our services</a>.
       </p>
     </div>
   </div>
@@ -70,4 +72,8 @@
       }
     }
   }
+
+  /* .inner p {
+    @apply text-lg;
+  } */
 </style>

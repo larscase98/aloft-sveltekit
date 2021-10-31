@@ -27,9 +27,9 @@
     <h2>{subtitle}</h2>{/if}
 </header>
 <nav>
-  <a href="about" class:active={url === '/about'}>about us</a>
+  <!-- <a href="about" class:active={url === '/about'}>about us</a>
   <a href="services" class:active={url === '/services'}>services</a>
-  <a href="projects" class:active={url === '/projects'}>projects</a>
+  <a href="projects" class:active={url === '/projects'}>projects</a> -->
   <a href="contact" class:active={url === '/contact'}>contact us</a>
 </nav>
 <main>
@@ -81,6 +81,6 @@
   /* main/section stlyes are in app.postcss */
 
   footer {
-    @apply w-full flex justify-center items-center p-2 bg-green-100 font-light;
+    @apply w-full flex justify-center items-center p-2 bg-blue-100 font-light;
   }
 </style>

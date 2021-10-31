@@ -35,4 +35,4 @@ Before creating a production version of your app, install an [adapter](https://k
 npm run build
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+Currently using adapter-node. Most pages are not navigable-to, but index and contact are accessible. Other page are hidden during development.
