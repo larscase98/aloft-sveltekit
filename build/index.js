@@ -1,7 +1,7 @@
 // .svelte-kit/node/env.js
 var path = process.env["SOCKET_PATH"] || false;
 var host = process.env["HOST"] || "0.0.0.0";
-var port = process.env["PORT"] || !path && 3e3;
+var port = process.env[4050] || !path && 3e3;
 
 // .svelte-kit/node/index.js
 import { assetsMiddleware, kitMiddleware, prerenderedMiddleware } from "./middlewares.js";
