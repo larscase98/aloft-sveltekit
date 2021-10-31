@@ -26,12 +26,12 @@
   {#if subtitle && subtitle.length > 0}
     <h2>{subtitle}</h2>{/if}
 </header>
-<nav>
-  <!-- <a href="about" class:active={url === '/about'}>about us</a>
+<!-- <nav>
+  <a href="about" class:active={url === '/about'}>about us</a>
   <a href="services" class:active={url === '/services'}>services</a>
-  <a href="projects" class:active={url === '/projects'}>projects</a> -->
+  <a href="projects" class:active={url === '/projects'}>projects</a>
   <a href="contact" class:active={url === '/contact'}>contact us</a>
-</nav>
+</nav> -->
 <main>
   <slot />
 </main>
@@ -48,7 +48,7 @@
     font-family: 'Zen Loop', 'Fira Sans', sans-serif;
 
     & h1 {
-      @apply font-bold text-6xl no-underline;
+      @apply font-bold text-6xl text-center no-underline;
 
       letter-spacing: 0.2rem;
 

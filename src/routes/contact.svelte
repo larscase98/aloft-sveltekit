@@ -16,32 +16,35 @@
   };
 </script>
 
-<section>
+<section class="px-8">
   <div class="content">
     <div class="inner">
       <h1>contact us</h1>
       <p><a href="mailto:lars@aloft.software">send us an email</a>, or fill out this form.</p>
       <form on:submit|preventDefault={handleSubmit}>
-        <label for="name"
-          >your name <span class="required">*</span>:
-          <input type="text" id="name" required bind:value={contactData.name} /></label
-        >
-        <label for="email"
-          >your email <span class="required">*</span>:
-          <input type="email" id="email" required bind:value={contactData.email} /></label
-        >
-        <label for="subject"
-          >subject: <input type="text" id="subject" bind:value={contactData.subject} /></label
-        >
-        <label for="message"
-          >message <span class="required">*</span>:
+        <div class="set">
+          <label for="name">your name <span class="required">*</span>:</label>
+          <input type="text" id="name" required bind:value={contactData.name} />
+        </div>
+
+        <div class="set">
+          <label for="email">your email <span class="required">*</span>:</label>
+          <input type="email" id="email" required bind:value={contactData.email} />
+        </div>
+        <div class="set">
+          <label for="subject">subject:</label>
+          <input type="text" id="subject" bind:value={contactData.subject} />
+        </div>
+        <div class="set">
+          <label for="message">message <span class="required">*</span>:</label>
           <textarea
             id="message"
             placeholder="what's on your mind?"
             required
             bind:value={contactData.message}
-          /></label
-        >
+          />
+        </div>
+
         <button type="submit">send!</button>
       </form>
       {#if submissionRes}
@@ -66,16 +69,28 @@
     @apply text-red-400 mx-0.5;
   }
 
+  .content {
+    @apply w-full;
+    @apply lg:w-3/4;
+  }
+
   form {
     @apply text-base w-full flex flex-col justify-start items-start bg-blue-50 p-4 rounded-lg space-y-4;
 
-    label {
-      @apply w-full flex flex-row justify-between items-center;
+    .set {
+      @apply w-full flex flex-col justify-start items-start;
+      @apply md:flex-row md:justify-between md:items-center;
 
-      & > input,
-      & > textarea {
-        @apply flex-grow ml-8 p-2 text-base text-gray-800 rounded border-2 border-blue-100;
+      label {
+        @apply flex flex-row flex-nowrap whitespace-nowrap;
+      }
+
+      input,
+      textarea {
+        @apply w-full flex-grow ml-0 p-2 text-base text-gray-800 rounded border-2 border-blue-100;
         @apply focus:border-blue-200;
+
+        @apply md:ml-8;
       }
     }
 

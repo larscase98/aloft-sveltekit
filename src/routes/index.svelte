@@ -16,6 +16,9 @@
     <h2>want to make something unique?</h2>
   </div>
 </section>
+<div class="contact-bar">
+  <a href="/contact">contact us</a>
+</div>
 <section class="bg-blue-100">
   <div class="content">
     <h1>web design</h1>
@@ -69,6 +72,18 @@
 
       & > * {
         @apply text-center;
+      }
+    }
+  }
+
+  .contact-bar {
+    @apply w-full flex justify-center p-6 bg-blue-800;
+
+    & > a {
+      @apply text-white font-light no-underline;
+
+      &:hover {
+        @apply underline text-blue-200;
       }
     }
   }
