@@ -10,7 +10,9 @@ export default {
     adapter: node({
       out: 'build',
       precompress: true,
-      env: {}
+      env: {
+        port: 4050
+      }
     })
   },
   preprocess: [
