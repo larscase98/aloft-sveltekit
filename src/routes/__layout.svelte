@@ -41,7 +41,7 @@
 
 <style lang="postcss">
   header {
-    @apply text-white w-full p-12 flex flex-col justify-center items-center;
+    @apply text-white w-full p-10 flex flex-col justify-center items-center;
     @apply bg-gradient-to-br from-blue-300 to-blue-400;
     @apply transition-all;
 
@@ -53,12 +53,12 @@
       letter-spacing: 0.2rem;
 
       & > a {
-        @apply text-white hover:text-blue-600 no-underline;
+        @apply leading-none px-4 text-white hover:text-blue-100 no-underline border-b-2 border-transparent hover:border-blue-100;
       }
     }
 
     &.hero {
-      @apply p-20;
+      @apply p-24;
 
       & h1 {
         @apply text-7xl;

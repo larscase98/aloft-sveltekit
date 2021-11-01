@@ -19,7 +19,7 @@
 <div class="contact-bar">
   <a href="/contact">contact us</a>
 </div>
-<section class="bg-blue-100">
+<section id="webdesign">
   <div class="content">
     <h1>web design</h1>
     <div class="inner">
@@ -34,14 +34,14 @@
       </p>
       <p>
         Your custom website can take any form you envision, and we can't wait to find out what that
-        looks like. For more information, check out <a href="/services">our services</a>.
+        looks like. <!-- For more information, check out <a href="/services">our services</a>. -->
       </p>
     </div>
   </div>
 </section>
-<section>
+<section id="software">
   <div class="content">
-    <h1>custom software solutions</h1>
+    <h1 class="text-blue-700">custom software solutions</h1>
     <div class="inner">
       <p>
         Maybe you need more than just a website - we'd love to help with that. Our specialty is
@@ -52,22 +52,29 @@
 </section>
 
 <style lang="postcss">
-  section .content h1 {
-    @apply text-blue-800 px-4 border-b-2 border-green-400 mb-4;
+  section .content {
+    & .inner {
+      @apply bg-white rounded-lg shadow;
+    }
+
+    & h1 {
+      @apply text-blue-800 px-2 border-b-2 border-orange-400 mb-4; /* mostly overwritten with ids lower down */
+    }
   }
 
   section.cta {
-    @apply bg-gradient-to-b from-blue-600 to-blue-800 my-0;
+    @apply bg-gradient-to-b from-blue-500 to-blue-700 my-0;
 
     .content {
       @apply flex flex-col w-full justify-center items-center p-16 px-2;
 
       & h3 {
-        @apply text-green-200 text-3xl font-light;
+        @apply text-blue-100 text-3xl font-light;
       }
 
       & h2 {
-        @apply text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-100 to-blue-100;
+        @apply text-4xl bg-clip-text text-transparent bg-gradient-to-r from-orange-100 to-orange-200;
+        @apply border-b-2 border-blue-200 p-1 px-4;
       }
 
       & > * {
@@ -77,18 +84,30 @@
   }
 
   .contact-bar {
-    @apply w-full flex justify-center p-6 bg-blue-800;
+    @apply w-full flex justify-center p-6 bg-blue-700;
 
     & > a {
-      @apply text-white font-light no-underline;
+      @apply text-xl text-white font-light no-underline px-1 border-b border-transparent transition-all;
 
       &:hover {
-        @apply underline text-blue-200;
+        @apply text-blue-200 border-blue-200;
       }
     }
   }
 
-  /* .inner p {
-    @apply text-lg;
-  } */
+  #webdesign {
+    @apply bg-blue-100;
+
+    & h1 {
+      @apply text-blue-800;
+    }
+  }
+
+  #software {
+    @apply bg-blue-50;
+
+    & h1 {
+      @apply text-blue-600 border-orange-300;
+    }
+  }
 </style>

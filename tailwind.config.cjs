@@ -8,6 +8,7 @@ const config = {
       colors: {
         blue: colors.sky,
         green: colors.emerald,
+        orange: colors.orange,
         gray: colors.coolGray
       }
     }
