@@ -40,11 +40,11 @@ h4 {
 }
 
 a {
-  @apply transition-all text-blue-700 hover:text-blue-500;
+  @apply transition-all text-sky-700 hover:text-sky-500;
 }
 
 main {
-  @apply flex-grow flex flex-col justify-start items-start bg-blue-50;
+  @apply flex-grow flex flex-col justify-start items-start bg-sky-100;
   font-family: 'Rubik';
 
   section {
@@ -55,8 +55,12 @@ main {
     }
 
     .inner {
-      @apply w-full flex flex-col justify-start items-start p-6 px-8 space-y-4 leading-relaxed;
+      @apply w-full flex flex-col justify-start items-start p-6 px-8 space-y-4 leading-relaxed rounded-lg;
       background-color: rgba(255, 255, 255, 0.5);
     }
   }
+}
+
+footer {
+  @apply w-full flex justify-center items-center p-2 bg-gray-50 font-light;
 }

@@ -10,15 +10,6 @@
 </svelte:head>
 <svelte:window bind:scrollY={y} />
 
-<section class="cta">
-  <div class="content">
-    <h3>the internet is full of the same old stuff.</h3>
-    <h2>want to make something unique?</h2>
-  </div>
-</section>
-<div class="contact-bar">
-  <a href="/contact">contact us</a>
-</div>
 <section id="webdesign">
   <div class="content">
     <h1>web design</h1>
@@ -54,60 +45,27 @@
 <style lang="postcss">
   section .content {
     & .inner {
-      @apply bg-white rounded-lg shadow;
+      @apply bg-sky-50 rounded-lg shadow;
     }
 
     & h1 {
-      @apply text-blue-800 px-2 border-b-2 border-orange-400 mb-4; /* mostly overwritten with ids lower down */
-    }
-  }
-
-  section.cta {
-    @apply bg-gradient-to-b from-blue-500 to-blue-700 my-0;
-
-    .content {
-      @apply flex flex-col w-full justify-center items-center p-16 px-2;
-
-      & h3 {
-        @apply text-blue-100 text-3xl font-light;
-      }
-
-      & h2 {
-        @apply text-4xl bg-clip-text text-transparent bg-gradient-to-r from-orange-100 to-orange-200;
-        @apply border-b-2 border-blue-200 p-1 px-4;
-      }
-
-      & > * {
-        @apply text-center;
-      }
-    }
-  }
-
-  .contact-bar {
-    @apply w-full flex justify-center p-6 bg-blue-700;
-
-    & > a {
-      @apply text-xl text-white font-light no-underline px-1 border-b border-transparent transition-all;
-
-      &:hover {
-        @apply text-blue-200 border-blue-200;
-      }
+      @apply text-blue-800 px-2 pb-1 border-b-2 border-gray-300 mb-4;
     }
   }
 
   #webdesign {
-    @apply bg-blue-100;
+    @apply bg-gradient-to-b from-sky-300 to-sky-200;
 
     & h1 {
-      @apply text-blue-800;
+      @apply text-blue-600 border-blue-400;
     }
   }
 
   #software {
-    @apply bg-blue-50;
+    @apply bg-gradient-to-b from-sky-200 to-sky-100;
 
     & h1 {
-      @apply text-blue-600 border-orange-300;
+      @apply text-blue-500 border-blue-300;
     }
   }
 </style>

@@ -20,7 +20,11 @@
   <div class="content">
     <div class="inner">
       <h1>contact us</h1>
-      <p><a href="mailto:lars@aloft.software">send us an email</a>, or fill out this form.</p>
+      <p>
+        <a href="mailto:lars@aloft.software">send us an email</a>, or fill out this form &mdash;
+        which sends us an email.
+      </p>
+      <p>can't wait to hear from you!</p>
       <form on:submit|preventDefault={handleSubmit}>
         <div class="set">
           <label for="name">your name <span class="required">*</span>:</label>
