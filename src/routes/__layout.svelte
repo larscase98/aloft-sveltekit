@@ -45,7 +45,7 @@
   <slot />
 </main>
 <footer>
-  <p>copyright &copy; 2021 - aloft software</p>
+  <p>copyright &copy; 2021 - aloft software (= Lars Case)</p>
 </footer>
 
 <style lang="postcss">
@@ -55,7 +55,7 @@
     @apply transition-all;
 
     & h1 {
-      @apply font-bold text-6xl text-center no-underline py-10;
+      @apply font-bold text-7xl text-center no-underline py-10;
 
       font-family: 'Zen Loop', 'Fira Sans', sans-serif;
       letter-spacing: 0.2rem;
@@ -71,23 +71,23 @@
       background-size: cover;
 
       & h1 {
-        @apply text-7xl py-20;
+        @apply text-8xl py-20;
       }
     }
 
     & .cta {
-      @apply w-full flex flex-col justify-center items-center py-8;
+      @apply w-full flex flex-col justify-center items-center text-center py-8 pt-16 px-8;
 
-      & > h2 {
-        @apply font-light text-2xl;
+      h2 {
+        @apply font-normal text-3xl text-white;
       }
 
-      & > h3 {
-        @apply font-normal mb-2 text-blue-700 text-3xl;
+      h3 {
+        @apply font-medium mb-2 text-pink-400 text-4xl;
       }
 
-      & > a {
-        @apply text-lg p-2 px-4 my-4 rounded bg-sky-100 hover:bg-blue-800 hover:text-blue-100;
+      a {
+        @apply text-lg p-2 px-4 my-4 rounded text-sky-500 bg-white hover:bg-sky-600 hover:text-white hover:shadow-lg;
       }
     }
   }
