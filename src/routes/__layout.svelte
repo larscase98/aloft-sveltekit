@@ -45,7 +45,7 @@
   <slot />
 </main>
 <footer>
-  <p>copyright &copy; 2021 - aloft software (= Lars Case)</p>
+  <p>copyright &copy; 2021 - aloft software</p>
 </footer>
 
 <style lang="postcss">
@@ -71,7 +71,7 @@
       background-size: cover;
 
       & h1 {
-        @apply text-8xl py-20;
+        @apply text-8xl pt-16 pb-28;
       }
     }
 
