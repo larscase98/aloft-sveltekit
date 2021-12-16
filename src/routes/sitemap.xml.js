@@ -2,7 +2,7 @@ const root = 'https://aloft.software';
 
 const url = (loc, changefreq, priority = 0.7) => `
 <url>
-<loc>${root}/${loc}</loc>
+<loc>${root}${loc}</loc>
 <changefreq>${changefreq}</changefreq>
 <priority>${priority}</priority>
 </url>
