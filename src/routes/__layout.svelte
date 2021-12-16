@@ -51,7 +51,7 @@
 <style lang="postcss">
   header {
     @apply text-white w-full flex flex-col justify-center items-center;
-    @apply bg-gradient-to-br from-sky-300 to-sky-600;
+    @apply bg-gradient-to-br from-sky-500 to-sky-200;
     @apply transition-all;
 
     & h1 {
@@ -69,6 +69,7 @@
       @apply bg-no-repeat;
       background-image: url('/img/aloft-waves.svg');
       background-size: cover;
+      font-family: 'Rubik';
 
       & h1 {
         @apply text-8xl pt-16 pb-28;
@@ -83,11 +84,11 @@
       }
 
       h3 {
-        @apply font-medium mb-2 text-pink-400 text-4xl;
+        @apply font-medium mb-2 text-blue-700 text-4xl;
       }
 
       a {
-        @apply text-lg p-2 px-4 my-4 rounded text-sky-500 bg-white hover:bg-sky-600 hover:text-white hover:shadow-lg;
+        @apply text-lg p-2 px-4 my-4 rounded text-sky-500 bg-white hover:bg-blue-700 hover:text-white hover:shadow-lg;
       }
     }
   }
