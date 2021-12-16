@@ -64,7 +64,7 @@
   }
 
   #software {
-    @apply bg-gradient-to-b from-sky-200 to-blue-300;
+    @apply bg-gradient-to-b from-sky-200 to-blue-400;
 
     & h1 {
       @apply text-blue-600 border-purple-300;

@@ -89,7 +89,7 @@
         @apply text-8xl pt-16 pb-32;
 
         a {
-          @apply p-0 m-0 hover:no-underline hover:text-blue-300;
+          @apply p-0 m-0 border-0 cursor-default hover:text-inherit;
         }
       }
     }
