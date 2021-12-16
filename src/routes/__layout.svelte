@@ -21,6 +21,13 @@
   };
 </script>
 
+<svelte:head>
+  <meta
+    name="description"
+    content="Aloft Software is a Bozeman-based, one-man web and software development startup, specializing in small business web development and modern programming practices."
+  />
+</svelte:head>
+
 <header class:hero={url === '/'}>
   <h1><a href="/">aloft software</a></h1>
   {#if subtitle && subtitle.length > 0}

@@ -16,13 +16,17 @@
   };
 </script>
 
+<svelte:head>
+  <title>aloft software | contact me</title>
+</svelte:head>
+
 <section class="px-8">
   <div class="content">
     <div class="inner">
-      <h1>contact us</h1>
+      <h1>contact me</h1>
       <p>
-        <a href="mailto:lars@aloft.software">send us an email</a>, or fill out this form &mdash;
-        which sends us an email.
+        <a href="mailto:lars@aloft.software">send me an email</a>, or fill out this form &mdash;
+        which sends me an email.
       </p>
       <p>can't wait to hear from you!</p>
       <form on:submit|preventDefault={handleSubmit}>
@@ -41,12 +45,7 @@
         </div>
         <div class="set">
           <label for="message">message <span class="required">*</span>:</label>
-          <textarea
-            id="message"
-            placeholder="what's on your mind?"
-            required
-            bind:value={contactData.message}
-          />
+          <textarea id="message" required bind:value={contactData.message} />
         </div>
 
         <button type="submit">send!</button>
@@ -99,8 +98,8 @@
     }
 
     button[type='submit'] {
-      @apply p-2 border-2 border-blue-400 text-blue-500 bg-white self-center rounded;
-      @apply hover:border-blue-600 hover:bg-blue-50 hover:text-blue-700 hover:shadow;
+      @apply p-2 border-2 border-sky-400 text-sky-500 bg-white self-center rounded;
+      @apply hover:border-sky-600 hover:bg-sky-50 hover:text-sky-700 hover:shadow;
     }
   }
 

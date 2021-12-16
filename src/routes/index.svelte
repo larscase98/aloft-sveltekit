@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>aloft software</title>
+  <title>aloft software | Bozeman web design and development</title>
 </svelte:head>
 <svelte:window bind:scrollY={y} />
 
