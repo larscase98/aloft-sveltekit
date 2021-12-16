@@ -36,8 +36,8 @@
 
   {#if url === '/'}
     <div class="cta">
-      <h2>the internet is full of the same old stuff.</h2>
-      <h3>ready to make something new?</h3>
+      <h2>the internet is full <wbr />of the same old stuff.</h2>
+      <h3>ready to make <wbr />something new?</h3>
       <a href="/contact">contact us</a>
     </div>
   {/if}
@@ -52,7 +52,14 @@
   <slot />
 </main>
 <footer>
-  <p>copyright &copy; 2021 - aloft software</p>
+  <div class="text">
+    <p>made with ☕️ by Aloft Software</p>
+    <p>&copy Lars Case 2021</p>
+  </div>
+  <!-- <div class="tech-icons">
+    <img src="img/svelte.png" alt="SvelteJS" />
+    <img src="img/tailwind.png" alt="TailwindCSS" />
+  </div> -->
 </footer>
 
 <style lang="postcss">
@@ -73,29 +80,33 @@
     }
 
     &.hero {
-      @apply bg-no-repeat;
+      @apply bg-sky-400 bg-no-repeat;
       background-image: url('/img/aloft-waves.svg');
       background-size: cover;
       font-family: 'Rubik';
 
-      & h1 {
-        @apply text-8xl pt-16 pb-28;
+      h1 {
+        @apply text-8xl pt-16 pb-32;
+
+        a {
+          @apply p-0 m-0 hover:no-underline hover:text-blue-300;
+        }
       }
     }
 
     & .cta {
-      @apply w-full flex flex-col justify-center items-center text-center py-8 pt-16 px-8;
+      @apply w-full flex flex-col justify-center items-center text-center p-8;
 
       h2 {
-        @apply font-normal text-3xl text-white;
+        @apply font-normal text-3xl text-white whitespace-pre-wrap;
       }
 
       h3 {
-        @apply font-medium mb-2 text-blue-700 text-4xl;
+        @apply font-medium mb-2 text-blue-700 text-4xl whitespace-pre-wrap;
       }
 
       a {
-        @apply text-lg p-2 px-4 my-4 rounded text-sky-500 bg-white hover:bg-blue-700 hover:text-white hover:shadow-lg;
+        @apply text-lg p-2 px-4 mt-8 rounded text-sky-500 bg-white hover:bg-blue-700 hover:text-white hover:shadow-lg;
       }
     }
   }

@@ -30,7 +30,7 @@
     </div>
   </div>
 </section>
-<section id="software">
+<section id="software" class="flex-grow">
   <div class="content">
     <h1 class="text-blue-700">custom software solutions</h1>
     <div class="inner">
@@ -45,11 +45,13 @@
 <style lang="postcss">
   section .content {
     & .inner {
-      @apply bg-sky-50 rounded-lg shadow;
+      @apply bg-sky-100 rounded-lg shadow-lg;
     }
 
     & h1 {
-      @apply text-blue-800 px-2 pb-1 border-b-2 border-gray-300 mb-4;
+      @apply font-medium text-blue-800 px-2 pr-4 border-b-8 border-gray-200 mb-4;
+      @apply whitespace-nowrap;
+      line-height: 0.4;
     }
   }
 
@@ -57,15 +59,21 @@
     @apply bg-gradient-to-b from-sky-300 to-sky-200;
 
     & h1 {
-      @apply text-blue-600 border-blue-400;
+      @apply text-blue-700 border-orange-200;
     }
   }
 
   #software {
-    @apply bg-gradient-to-b from-sky-200 to-sky-100;
+    @apply bg-gradient-to-b from-sky-200 to-blue-300;
 
     & h1 {
-      @apply text-blue-500 border-blue-300;
+      @apply text-blue-600 border-purple-300;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section .content h1 {
+      @apply -ml-6;
     }
   }
 </style>
