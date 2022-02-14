@@ -19,6 +19,8 @@
         return 'contact us';
     }
   };
+
+  export let segment;
 </script>
 
 <svelte:head>
@@ -111,7 +113,7 @@
     }
   }
 
-  nav {
+  /* nav {
     @apply bg-sky-600 flex flex-row justify-center items-baseline;
 
     a {
@@ -121,5 +123,5 @@
         @apply bg-sky-500 border-sky-600;
       }
     }
-  }
+  } */
 </style>
