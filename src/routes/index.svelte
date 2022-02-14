@@ -25,7 +25,7 @@
       </p>
       <p>
         Your custom website can take any form you envision, and we can't wait to find out what that
-        looks like. <!-- For more information, check out <a href="/services">our services</a>. -->
+        looks like.
       </p>
     </div>
   </div>
