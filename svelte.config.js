@@ -4,11 +4,10 @@ import node from '@sveltejs/adapter-node';
 
 export default {
   kit: {
-    target: '#svelte',
     adapter: node({
       out: 'build',
       precompress: true,
-      env: {
+      envPrefix: {
         port: 4050
       }
     })

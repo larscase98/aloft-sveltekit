@@ -1,30 +1,24 @@
 import { MongoClient } from 'mongodb';
 
-import keys from '$lib/keys';
+/** @type {MongoClient} */
+let client;
 
-// cache the connection in case of quick subsequent requests, keeps the same connection open
-let cached = global.mongoose;
-if (!cached) cached = global.mongoose = { conn: null, promise: null };
+// rarely use this directly, create helper functions at bottom to use collections.
+export const connect = async () => {
+  let uri = import.meta.env.VITE_MONGO_URI;
 
-export const connectToDb = async () => {
-  if (cached.conn) return cached.conn;
-
-  if (!cached.promise) {
-    const opts = {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    };
-
-    cached.promise = MongoClient.connect(keys.mongoURI, opts)
-      .then(client => {
-        console.log('Connected to mongo');
-        return { client, db: client.db(keys.mongodb) };
-      })
-      .catch(err => {
-        console.log('Error connecting to mongo:', err);
-      });
+  if (!uri) {
+    console.log('ERROR: please add Mongo URI to .env file');
+    return;
   }
 
-  cached.conn = await cached.promise;
-  return cached.conn;
+  if (!client) {
+    client = new MongoClient(uri);
+    await client.connect();
+  }
+
+  return client;
 };
+
+export const getDb = async () => (await connect()).db(import.meta.env.VITE_MONGO_DB);
+export const getContactFormsCollection = async () => (await getDb()).collection('contactforms');

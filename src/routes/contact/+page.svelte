@@ -8,10 +8,19 @@
     message: ''
   };
 
+  const resetForm = () => {
+    for (const prop in contactData) contactData[prop] = '';
+  };
+
   const handleSubmit = () => {
-    fetch('/api/contact', { method: 'POST', body: JSON.stringify(contactData) }).then(res => {
-      submissionRes = res;
-      if (res.ok) for (const prop in contactData) contactData[prop] = '';
+    fetch('/api/contact', { method: 'POST', body: JSON.stringify(contactData) }).then(async res => {
+      submissionRes = { ...(await res.json()), ok: res.ok };
+
+      console.log(submissionRes);
+
+      if (res.ok) {
+        resetForm();
+      }
     });
   };
 </script>
@@ -25,8 +34,8 @@
     <div class="inner">
       <h1>contact me</h1>
       <p>
-        <a href="mailto:lars@aloft.software">send me an email</a>, or fill out this form &mdash;
-        which sends me an email.
+        <a href="mailto:lars@aloft.software">send me an email</a>, or fill out this form, which
+        sends me an email.
       </p>
       <p>can't wait to hear from you!</p>
       <form on:submit|preventDefault={handleSubmit}>
@@ -53,9 +62,7 @@
       {#if submissionRes}
         <div class="res" class:success={submissionRes.ok} class:error={!submissionRes.ok}>
           <p>
-            {submissionRes.ok
-              ? 'Success! Thanks for your message, we will get back to you soon.'
-              : 'Sorry, there was an error, please try again later.'}
+            {submissionRes.message || 'Sorry, there was an error, please try again later.'}
           </p>
         </div>
       {/if}

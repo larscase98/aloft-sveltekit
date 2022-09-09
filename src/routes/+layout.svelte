@@ -3,7 +3,7 @@
 
   import '../app.postcss';
 
-  $: url = $page.path;
+  $: url = $page.url.pathname;
 
   $: subtitle = (u = url) => {
     switch (u) {
@@ -19,8 +19,6 @@
         return 'contact us';
     }
   };
-
-  export let segment;
 </script>
 
 <svelte:head>
