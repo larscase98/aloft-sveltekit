@@ -2,7 +2,7 @@
   "name": "aloft-sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite dev --port 3000",
     "build": "vite build",
     "start": "npm run preview",
     "preview": "vite preview --port 4050",

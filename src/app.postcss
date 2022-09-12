@@ -21,61 +21,67 @@ body > div#svelte {
 }
 
 h1 {
-  @apply text-3xl font-light;
+  @apply text-4xl font-light;
 }
 
 h2 {
-  @apply text-2xl;
+  @apply text-3xl;
 }
 
 h3 {
-  @apply text-xl;
+  @apply text-2xl;
 }
 
 h4 {
+  @apply text-xl;
+}
+
+h5 {
   @apply text-lg;
 }
 
 a {
-  @apply transition-all text-sky-700 hover:text-sky-500;
+  @apply underline hover:no-underline transition-all;
+}
+
+header {
+  @apply w-full flex flex-col justify-center items-center text-white;
 }
 
 main {
-  @apply flex-grow flex flex-col justify-start items-start bg-sky-100;
-  font-family: 'Rubik';
-
-  section {
-    @apply w-full flex flex-col justify-start items-center py-8;
-
-    .content {
-      @apply w-5/6 lg:w-2/3 xl:w-3/5 flex flex-col justify-start items-start;
-    }
-
-    .inner {
-      @apply w-full flex flex-col justify-start items-start p-6 px-8 space-y-4 leading-relaxed rounded-lg;
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-  }
+  @apply w-full flex-grow flex flex-col justify-start items-start bg-gradient-to-b from-sky-300 to-blue-400;
 }
 
-footer {
-  @apply flex flex-col justify-center items-center text-white font-light p-2;
-  @apply bg-blue-400 bg-gradient-to-b from-blue-400 to-blue-500;
-  font-family: 'Rubik';
+section {
+  @apply w-full flex flex-col justify-start items-center;
 
-  & > div {
-    @apply flex flex-col justify-center items-end py-1 px-4;
+  &:not(last-of-type) {
+    @apply mb-6;
+  }
 
-    &.text {
-      @apply flex flex-col justify-center items-center leading-tight;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Rubik';
+  }
+
+  .content {
+    @apply w-11/12 lg:w-2/3 xl:w-3/5 flex flex-col justify-start items-start;
+  }
+
+  .inner {
+    @apply w-full flex flex-col justify-start items-start p-6 px-8 space-y-2 leading-relaxed rounded-lg bg-white;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    h1 {
+      @apply mb-1 ml-2 font-light text-center self-center;
     }
 
-    &.tech-icons {
-      @apply flex flex-row justify-start items-center space-x-0.5 mt-0.5 p-1;
-
-      img {
-        @apply w-6 h-auto;
-      }
+    h2 {
+      @apply mb-1 ml-1;
     }
   }
 }
