@@ -6,8 +6,6 @@
   import Footer from '$lib/Footer.svelte';
 
   $: url = $page.url.pathname;
-
-  export const prerender = true;
 </script>
 
 <svelte:head>

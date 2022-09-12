@@ -1,8 +1,6 @@
 <script context="module">
   import Footer from '$lib/Footer.svelte';
   import '../app.postcss';
-
-  export const prerender = true;
 </script>
 
 <svelte:head>
