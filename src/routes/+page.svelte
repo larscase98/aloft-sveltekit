@@ -90,7 +90,7 @@
     }
 
     h1 {
-      @apply text-9xl pt-24 pb-20 font-bold;
+      @apply text-9xl pt-24 pb-20 font-bold text-center;
       font-family: 'Zen Loop', 'Fira Sans', sans-serif;
       letter-spacing: 0.2rem;
 
@@ -107,11 +107,11 @@
       }
 
       h3 {
-        @apply font-medium mb-2 text-blue-700 text-4xl whitespace-pre-wrap;
+        @apply font-normal mb-2 text-blue-700 text-4xl whitespace-pre-wrap;
       }
 
       a {
-        @apply text-xl font-medium no-underline p-2 px-4 mt-8 rounded text-sky-500 bg-white hover:bg-blue-700 hover:text-white hover:shadow-lg;
+        @apply text-xl font-normal no-underline p-2 px-4 mt-8 rounded text-sky-500 bg-white hover:bg-blue-700 hover:text-white hover:shadow-lg;
       }
     }
   }
@@ -126,9 +126,7 @@
         }
 
         & h1 {
-          @apply font-medium text-blue-800 px-2 pr-4 border-b-8 border-gray-200 mb-4;
-          @apply whitespace-nowrap;
-          line-height: 0.4;
+          @apply font-normal text-blue-800 px-2 pr-4 border-b-8 border-gray-200 mb-4 leading-6 sm:leading-4;
         }
       }
     }
