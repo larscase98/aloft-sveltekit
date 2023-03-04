@@ -1,16 +1,12 @@
 <footer>
   <div class="text">
     <p>
-      <a href="https://github.com/larscase98/aloft-sveltekit" target="_blank"
+      <a href="https://github.com/larscase98/aloft-sveltekit" target="_blank" rel="noreferrer"
         >made with ☕️ by Lars Case</a
       >
     </p>
     <p>&copy Aloft Software 2021</p>
   </div>
-  <!-- <div class="tech-icons">
-    <img src="img/svelte.png" alt="SvelteJS" />
-    <img src="img/tailwind.png" alt="TailwindCSS" />
-  </div> -->
 </footer>
 
 <style lang="postcss">
@@ -24,14 +20,6 @@
 
       &.text {
         @apply flex flex-col justify-center items-center leading-tight;
-      }
-
-      &.tech-icons {
-        @apply flex flex-row justify-start items-center space-x-0.5 mt-0.5 p-1;
-
-        img {
-          @apply w-6 h-auto;
-        }
       }
     }
   }
