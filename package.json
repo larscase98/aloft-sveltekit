@@ -11,7 +11,7 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-node": "^1.2.1",
+    "@sveltejs/adapter-node": "^1.2.2",
     "@sveltejs/kit": "^1.10.0",
     "ackee-tracker": "^5.1.0",
     "autoprefixer": "^10.4.13",
