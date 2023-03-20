@@ -235,10 +235,10 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@sveltejs/adapter-node@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.2.1.tgz#59ddc495684dab423e8bfb367c2f2bbcfe8ac463"
-  integrity sha512-mEGDCaZVU3qvFdUI8CMKv+BSzpBYpTpcx85u8bfJ+vcv57pu4UXjZg7ivOoxWZdunUeqq4oEyE+kHmlgBRAalg==
+"@sveltejs/adapter-node@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.2.3.tgz#466b39d8bcc918e2cc000b108491f1181c32791b"
+  integrity sha512-Fv6NyVpVWYA63KRaV6dDjcU8ytcWFiUr0siJOoHl+oWy5WHNEuRiJOUdiZzYbZo8MmvFaCoxHkTgPrVQhpqaRA==
   dependencies:
     "@rollup/plugin-commonjs" "^24.0.0"
     "@rollup/plugin-json" "^6.0.0"
