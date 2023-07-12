@@ -1,24 +1,12 @@
-import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-node';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-import node from '@sveltejs/adapter-node';
-
-export default {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
   kit: {
-    adapter: node({
-      out: 'build',
-      precompress: true,
-      envPrefix: {
-        port: 4050
-      }
-    })
+    adapter: adapter()
   },
-  preprocess: [
-    preprocess({
-      postcss: true
-    })
-  ]
+  preprocess: vitePreprocess()
 };
 
-const mode = process.env.NODE_ENV;
-const dev = mode === 'development';
-process.env.TAILWIND_MODE = dev ? 'watch' : 'build';
+export default config;

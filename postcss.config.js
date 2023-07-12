@@ -1,7 +1,7 @@
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
-const config = {
+export default {
   plugins: {
     'tailwindcss/nesting': {},
     tailwindcss: {},
@@ -13,5 +13,3 @@ const config = {
       : {})
   }
 };
-
-module.exports = config;

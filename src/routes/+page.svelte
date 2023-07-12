@@ -4,16 +4,16 @@
 </script>
 
 <svelte:head>
-  <title>aloft software | Bozeman web design and development</title>
+  <title>aloft software | web design and development</title>
   <meta
     name="description"
-    content="Aloft Software is a Bozeman-based, one-man web and software development startup, specializing in small business web development and modern programming practices."
+    content="Aloft Software is a one-man web and software development startup, specializing in small business web development and modern programming practices."
   />
 </svelte:head>
 
 <header>
   <nav>
-    <a href="/about" id="about">about</a>
+    <!-- <a href="/about" id="about">about</a> -->
     <a href="/services" id="services">services</a>
     <a href="/projects" id="projects">projects</a>
   </nav>
@@ -23,7 +23,7 @@
   <div class="cta">
     <h2>the internet is full <wbr />of the same old stuff.</h2>
     <h3>ready to make <wbr />something new?</h3>
-    <a href="/contact">contact us</a>
+    <a href="/contact">contact me</a>
   </div>
 </header>
 <main>
@@ -37,8 +37,8 @@
           important to stake out your own internet real estate.
         </p>
         <p>
-          The sad truth about the state of web development is that the internet chock full of
-          bloated, unnecessary crap, slowing things for you and your visitors.
+          The sad truth about the state of web development is that the internet chock full of bloat,
+          slowing things for you and your visitors.
         </p>
         <p>
           This brings an opportunity to stand out. Your custom website can take any form you

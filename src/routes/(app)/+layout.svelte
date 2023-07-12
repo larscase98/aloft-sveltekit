@@ -11,13 +11,13 @@
 <svelte:head>
   <meta
     name="description"
-    content="Aloft Software is a Bozeman-based, one-man web and software development startup, specializing in small business web development and modern programming practices."
+    content="Aloft Software is a one-man web and software development startup, specializing in small business web development and modern programming practices."
   />
 </svelte:head>
 
 <nav>
   <a href="/" class:active={url === '/'}>home</a>
-  <a href="/about" class:active={url === '/about'}>about</a>
+  <!-- <a href="/about" class:active={url === '/about'}>about</a> -->
   <a href="/services" class:active={url === '/services'}>services</a>
   <a href="/projects" class:active={url === '/projects'}>projects</a>
   <a href="/contact" class:active={url === '/contact'}>contact</a>

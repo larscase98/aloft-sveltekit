@@ -5,7 +5,7 @@
         >made with ☕️ by Lars Case</a
       >
     </p>
-    <p>&copy Aloft Software 2021</p>
+    <p>&copy Aloft Software 2023</p>
   </div>
 </footer>
 
